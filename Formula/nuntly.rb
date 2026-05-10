@@ -28,9 +28,15 @@ class Nuntly < Formula
 
   def install
     bin.install Dir["*"].first => "nuntly"
+
+    # `nuntly completion <shell>` outputs a static completion script that does
+    # not require config. Homebrew picks the right destination directory per
+    # shell automatically.
+    generate_completions_from_executable(bin/"nuntly", "completion", shells: [:bash, :zsh, :fish])
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/nuntly --version")
+    assert_match "_nuntly", shell_output("#{bin}/nuntly completion bash")
   end
 end
