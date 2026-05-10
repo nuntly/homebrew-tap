@@ -46,7 +46,7 @@ Two ways. Pick one.
 nuntly login
 
 # Or per-shell env var
-export NUNTLY_API_KEY=nun_...
+export NUNTLY_API_KEY=ntly_...
 ```
 
 ### Send an email
