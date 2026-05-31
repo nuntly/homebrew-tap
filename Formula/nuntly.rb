@@ -1,28 +1,28 @@
 class Nuntly < Formula
   desc "Command-line interface for Nuntly, the developer-first email platform"
   homepage "https://nuntly.com"
-  version "1.0.0-alpha.21"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/nuntly/nuntly-cli/releases/download/v#{version}/nuntly-darwin-arm64"
-      sha256 "d22da399d470f5b0f9c5a7f32de0327eb26a1560da7c2296ba7208988f7d54da"
+      sha256 "0fb5409eafa50bfd4dc534c9edb173c8bf21b65fb0df2199ecf115a5f85f9e4a"
     end
     on_intel do
       url "https://github.com/nuntly/nuntly-cli/releases/download/v#{version}/nuntly-darwin-x64"
-      sha256 "d7e2f0b43b9fbbfdf878fd25d5def7e155a4bf4aff5e0e9447317f1ef68095d0"
+      sha256 "1774a1549d0a763deb63d8cacd4d33b1eacc8a8d16ca0ac5bbf2488620a304ec"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/nuntly/nuntly-cli/releases/download/v#{version}/nuntly-linux-arm64"
-      sha256 "76d3410674f2b9b2d206a7cbcd84303786e17e13b4e9d509e52c3d44b1ee7192"
+      sha256 "3816ee7a39504cf31a562dc03a217bbb7140ed5f75f7a7a815019c5c5cce1c8b"
     end
     on_intel do
       url "https://github.com/nuntly/nuntly-cli/releases/download/v#{version}/nuntly-linux-x64"
-      sha256 "5830578a828ea0c791edcea9836e14fb3e3e78f2508e6a0a61c1f60b3b165424"
+      sha256 "fed456a1089f8ff32fa5f6fa554c2ae7c7a8886b0c0ab7056c6183fb2082e268"
     end
   end
 
